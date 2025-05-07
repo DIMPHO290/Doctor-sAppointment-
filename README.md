@@ -55,7 +55,7 @@ This application follows the 3-tier architecture model:
 
 1. Clone the Repository
 2. Import the Project into an IDE
-- Use Eclipse or IntelliJ IDEA.
+- Use NetBeans IDE
 - Import as a Maven project or Dynamic Web Project.
 
 3. Configure Database
