@@ -71,7 +71,7 @@ This application follows the 3-tier architecture model:
 
 - Gift
 - Dimpho 
-- Sharroll
+- Sharoll
 
 ## License
 
