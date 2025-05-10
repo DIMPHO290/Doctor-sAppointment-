@@ -8,9 +8,9 @@ This project is a web-based Doctor’s Appointment Booking System developed usin
 
 - Book an appointment with a doctor
 - View scheduled appointments
-- Remove or update appointments
-- Admin panel for viewing and managing all appointments
-- View list of patients 
+- Update appointments
+- Remove appointment(s)
+-  
 ## Technologies Used
 
 - Java EE (JEE)
