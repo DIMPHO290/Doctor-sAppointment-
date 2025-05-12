@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Booking Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Fill in the patient's form below</h1>
+        <form action="AddAppointmentServlet.do" method="POST">
+            <table border="1">
+                <tbody>
+                      <tr>
+                        <td>ID</td>
+                        <td><input type="text" name="id" required=""/></td>
+                    </tr>
+                    <tr>
+                        <td>Patient Name</td>
+                        <td><input type="text" name="patientName" required=""/></td>
+                    </tr>
+                    <tr>
+                        <td>Reason</td>
+                        <td>
+                            <select name="reason">
+                                <option value="Consultation">Consultation</option>
+                                <option value="Collecting Medication">Collecting Medication</option>
+                                <option value="Family Planning">Family Planning</option>
+                                <option value="Testing">Testing</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Payment Type</td>
+                        <td>
+                            <select name="payment">
+                                <option value="Cash">Cash</option>
+                                <option value="Online">Online</option>
+                            </select>
+                        </td>
+                    </tr>
+                     <tr>
+                        <td>Date</td>
+                        <td><input type="date" name="date" required=""/></td>
+                    </tr>
+                    <tr>
+                        <td>Doctor's Name</td>
+                        <td>
+                            <select name="docName">
+                                <option value="Dr Smith">Dr Smith</option>
+                                <option value="Dr Johnson">Dr Johnson</option>
+                                <option value="Dr Makweya">Dr Makweya</option>
+                                <option value="Dr Khumalo">Dr Khumalo</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                          <td><input type="hidden" name="op" value="add"/></td>
+                        <td><input type="submit" value="Add Booking"/></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </form>
+    </body>
+</html>

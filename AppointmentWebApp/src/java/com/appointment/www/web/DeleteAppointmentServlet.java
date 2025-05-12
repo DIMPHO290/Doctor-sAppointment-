@@ -1,0 +1,47 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.appointment.www.web;
+
+import com.appointment.www.Appointment;
+import com.appointment.www.AppointmentFacadeLocal;
+import java.io.IOException;
+import java.io.PrintWriter;
+import javax.ejb.EJB;
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ *
+ * @author dimph
+ */
+public class DeleteAppointmentServlet extends HttpServlet {
+
+  @EJB AppointmentFacadeLocal afl;
+
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+      
+        Long id = Long.parseLong(request.getParameter("id"));
+        
+        Appointment appointment = afl.find(id);
+        
+        if(appointment!= null)
+        afl.remove(appointment);
+        
+        request.setAttribute("appointment", appointment);
+        
+         RequestDispatcher disp = request.getRequestDispatcher("remove_details_outcome.jsp");
+        disp.forward(request, response);
+        
+    }
+
+   
+
+}
