@@ -23,7 +23,7 @@ This project is a web-based Doctor’s Appointment Booking System developed usin
 
 ## Team Members
 
-Gift  Ratshili     [220330664]
-Dimpho  Mahwibila [221566653]
-Sharoll Hlagala    [221608593]
+- Dimpho  Mahwibila [221566653]
+- Gift  Ratshili [220330664]
+- Sharoll Hlagala [221608593]
 
